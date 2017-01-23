@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Env Sensor Observer for python 2.7
+# python Environment Sensor Observer for Linux
 #
 # target device : OMRON Environment Sensor (2JCIE-BL01) in Broadcaster mode
 #
