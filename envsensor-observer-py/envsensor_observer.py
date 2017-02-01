@@ -279,8 +279,9 @@ if __name__ == "__main__":
                 if debug:
                     print "-- initialize fluentd"
                 init_fluentd()
-                # uncomment when using influxDB through fluentd.
-                # create_influx_database()
+                # create database when using influxDB through fluentd.
+                if conf.FLUENTD_INFLUXDB:
+                    create_influx_database()
                 if debug:
                     print "-- initialize fluentd : success"
         except Exception as e:
