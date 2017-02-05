@@ -58,7 +58,7 @@ Environment Sensor (2JCIE-BL01) must be configured as a beacon broadcaster (IM/E
 
 In this mode of operation, sensor data is included in the advertisement packet to be transmitted.
 
-Please refer to communication interface manual for more details.
+Please refer to [communication interface manual](https://omronmicrodevices.github.io/products/2jcie-bl01/communication_if_manual.html) for more details.
 
 
 ### Configuration
