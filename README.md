@@ -1,6 +1,6 @@
 # envsensor-observer-py
 
-Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCIE-BL01](http://www.omron.co.jp/ecb/products/sensor/special/environmentsensor/)).
+Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCIE-BL01](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)).
 
 *   No BLE connections are required
 *   Accept advertisements from multiple sensor
@@ -102,3 +102,9 @@ With [Grafana](http://grafana.org/), you can easily visualize any of data stored
 ## Note :
 
 It should be noted that this example code is for demonstration purposes only, it is not intended for use in a production environment, is not guaranteed fit for any purpose.
+
+## Reference :
+*   [OMRON Corporation](http://www.omron.com/)
+*   [OMRON Micro Devices - Github](https://github.com/OmronMicroDevices/)
+*   [OMRON Micro Devices - Resources & Samples](https://OmronMicroDevices.github.io/)
+*   [Environment Sensor :  2JCIE-BL01 Product Page](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)
