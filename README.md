@@ -107,4 +107,5 @@ It should be noted that this example code is for demonstration purposes only, it
 *   [OMRON Corporation](http://www.omron.com/)
 *   [OMRON Micro Devices - Github](https://github.com/OmronMicroDevices/)
 *   [OMRON Micro Devices - Resources & Samples](https://OmronMicroDevices.github.io/)
-*   [Environment Sensor :  2JCIE-BL01 Product Page](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)
+*   [Environment Sensor : 2JCIE-BL01 Product Page](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)
+*   [Environment Sensor : 2JCIE-BL01 Communication Interface Manual](https://omronmicrodevices.github.io/products/2jcie-bl01/communication_if_manual.html)
