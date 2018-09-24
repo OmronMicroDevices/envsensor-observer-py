@@ -16,6 +16,11 @@ def bytes2ushort(hi, lo):
     return ushort_val
 
 
+def bytes2uint32(highest, high, low, lowest):
+    uint32_val = ((highest << 24) | (high << 16) | (low << 8) | lowest)
+    return uint32_val
+
+
 def bytes2short(hi, lo):
     val = (hi << 8) | lo
     if (hi & 0b10000000) == 0b10000000:

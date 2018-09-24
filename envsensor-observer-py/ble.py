@@ -567,12 +567,23 @@ def verify_beacon_packet(report):
         return result
     if (get_companyid(report["payload_binary"][5:7]) != COMPANY_ID):
         return result
-    # check shortened local name ("IM")
-    if (struct.unpack("<B", report["payload_binary"][28])[0] !=
+    # check shortened local name
+    if (struct.unpack("<B", report["payload_binary"][28])[0] ==
             ADV_TYPE_SHORT_LOCAL_NAME):
-        return result
-    if ((report["payload_binary"][29:31] != "IM") and
-            (report["payload_binary"][29:31] != "EP")):
+        if ((report["payload_binary"][29:31] == "IM") or
+                (report["payload_binary"][29:31] == "EP")):
+            pass
+        else:
+            return result
+    elif (struct.unpack("<B", report["payload_binary"][27])[0] ==
+            ADV_TYPE_SHORT_LOCAL_NAME):
+        if ((report["payload_binary"][28:31] == "Rbt") and
+            ((struct.unpack("<B", report["payload_binary"][7])[0] == 0x01) or
+             (struct.unpack("<B", report["payload_binary"][7])[0] == 0x02))):
+            pass
+        else:
+            return result
+    else:
         return result
 
     result = True
@@ -585,5 +596,18 @@ def classify_beacon_packet(report):
         return "IM"
     elif (report["payload_binary"][29:31] == "EP"):
         return "EP"
+    elif (report["payload_binary"][28:31] == "Rbt"):
+        if (struct.unpack("<B", report["payload_binary"][7])[0] == 0x01):
+            return "Rbt 0x01"
+        elif (struct.unpack("<B", report["payload_binary"][7])[0] == 0x02):
+            return "Rbt 0x02"
+        elif (struct.unpack("<B", report["payload_binary"][7])[0] == 0x03):
+            return "Rbt 0x03"
+        elif (struct.unpack("<B", report["payload_binary"][7])[0] == 0x04):
+            return "Rbt 0x04"
+        elif (struct.unpack("<B", report["payload_binary"][7])[0] == 0x05):
+            return "Rbt 0x05"
+        elif (struct.unpack("<B", report["payload_binary"][7])[0] == 0x06):
+            return "Rbt 0x06"
     else:
         return "UNKNOWN"

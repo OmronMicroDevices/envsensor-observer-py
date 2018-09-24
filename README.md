@@ -16,6 +16,7 @@ Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCI
     *   Heatstroke risk indicator
     *   Battery voltage
     *   RSSI
+*   2JCIE-BU Environment Sensor (USB Type) is now supported (Advertising mode 0x01 & 0x02)
 *   Flexible data logging options
     *   Local CSV file (rotate every midnight)
     *   Local / Remote [fluentd](http://www.fluentd.org/) daemon
