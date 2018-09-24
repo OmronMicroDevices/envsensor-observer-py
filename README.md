@@ -1,6 +1,6 @@
 # envsensor-observer-py
 
-Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCIE-BL01](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)).
+Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCIE-BL01](http://www.omron.com/ecb/products/sensor/special/environmentsensor/))([2JCIE-BU01](https://www.components.omron.com/product-detail?partId=73065)).
 
 *   No BLE connections are required
 *   Accept advertisements from multiple sensor

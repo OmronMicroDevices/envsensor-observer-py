@@ -2,7 +2,7 @@
 #
 # python Environment Sensor Observer for Linux
 #
-# target device : OMRON Environment Sensor (2JCIE-BL01) in Broadcaster mode
+# target device : OMRON Environment Sensor (2JCIE-BL01 & BU01) in Broadcaster mode
 #
 # require : python-bluez
 #         : fluent-logger-python (when FLUENTD_FORWARD = True in configuration)
@@ -36,7 +36,7 @@ if conf.INFLUXDB_OUTPUT:
     from influxdb import InfluxDBClient
 
 # constant
-VER = 1.0
+VER = 1.2
 
 # ystem constant
 GATEWAY = socket.gethostname()
