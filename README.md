@@ -64,7 +64,7 @@ Environment Sensor (2JCIE-BL01) must be configured as a beacon broadcaster (IM/E
 
 In this mode of operation, sensor data is included in the advertisement packet to be transmitted.
 
-Please refer to User's Manual [User's Manual](https://www.components.omron.com/product-detail?partId=73064) for more details.
+Please refer to [User's Manual](https://www.components.omron.com/product-detail?partId=73064) for more details.
 
 \[2JCIE-BU01\]
 
@@ -76,7 +76,7 @@ In this mode of operation, sensor data is included in the advertisement packet t
 
 Currently, this sample script only support 0x01 (Sensor data) and 0x02 (Calculation data).
 
-Please refer to User's Manual [User's Manual](https://www.components.omron.com/product-detail?partId=73065) for more details.
+Please refer to [User's Manual](https://www.components.omron.com/product-detail?partId=73065) for more details.
 
 
 ### Configuration
