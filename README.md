@@ -57,6 +57,7 @@ When uploading data to influxDB 0.9 or higher (Optional)
 #### Device Setup
 
 \[2JCIE-BL01\]
+
 ![Sensor](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/2jcie-bl01_s.png)
 
 Environment Sensor (2JCIE-BL01) must be configured as a beacon broadcaster (IM/EP).
@@ -66,6 +67,7 @@ In this mode of operation, sensor data is included in the advertisement packet t
 Please refer to User's Manual [User's Manual](https://www.components.omron.com/product-detail?partId=73064) for more details.
 
 \[2JCIE-BU01\]
+
 ![USB_Sensor](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/2jcie-bu01_s.png)
 
 Advertising mode of USB type Environment Sensor (2JCIE-BU01) must be set to 0x01 or 0x02.
