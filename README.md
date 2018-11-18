@@ -17,6 +17,9 @@ Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCI
     *   Battery voltage
     *   RSSI
 *   2JCIE-BU Environment Sensor (USB Type) is now supported (Advertising mode 0x01 & 0x02)
+
+![USB_Sensor](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/2jcie-bu01_s.png)
+
 *   Flexible data logging options
     *   Local CSV file (rotate every midnight)
     *   Local / Remote [fluentd](http://www.fluentd.org/) daemon
@@ -24,7 +27,7 @@ Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCI
 *   Tested on Raspberry Pi 3 model B (built-in Bluetooth connectivity)
 
 
-![Diagram](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/diagram_s.png)
+![Diagram](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/diagram2_s.png)
 
 ## Requirements
 
@@ -53,13 +56,25 @@ When uploading data to influxDB 0.9 or higher (Optional)
 
 #### Device Setup
 
+\[2JCIE-BL01\]
 ![Sensor](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/2jcie-bl01_s.png)
 
 Environment Sensor (2JCIE-BL01) must be configured as a beacon broadcaster (IM/EP).
 
 In this mode of operation, sensor data is included in the advertisement packet to be transmitted.
 
-Please refer to [communication interface manual](https://omronmicrodevices.github.io/products/2jcie-bl01/communication_if_manual.html) for more details.
+Please refer to User's Manual [User's Manual](https://www.components.omron.com/product-detail?partId=73064) for more details.
+
+\[2JCIE-BU01\]
+![USB_Sensor](https://github.com/OmronMicroDevices/envsensor-observer-py/wiki/images/2jcie-bu01_s.png)
+
+Advertising mode of USB type Environment Sensor (2JCIE-BU01) must be set to 0x01 or 0x02.
+
+In this mode of operation, sensor data is included in the advertisement packet to be transmitted.
+
+Currently, this sample script only support 0x01 (Sensor data) and 0x02 (Calculation data).
+
+Please refer to User's Manual [User's Manual](https://www.components.omron.com/product-detail?partId=73065) for more details.
 
 
 ### Configuration
@@ -108,6 +123,7 @@ It should be noted that this example code is for demonstration purposes only, it
 *   [OMRON Corporation](http://www.omron.com/)
 *   [OMRON Micro Devices - Github](https://github.com/OmronMicroDevices/)
 *   [OMRON Micro Devices - Resources & Samples](https://OmronMicroDevices.github.io/)
-*   [Environment Sensor : 2JCIE-BL01 Product Page](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)
-*   [環境センサ : 2JCIE-BL01 製品紹介](http://www.omron.co.jp/ecb/products/sensor/special/environmentsensor/)
-*   [Environment Sensor : 2JCIE-BL01 Communication Interface Manual](https://omronmicrodevices.github.io/products/2jcie-bl01/communication_if_manual.html)
+*   [Environment Sensor : 2JCIE Product Page](http://www.omron.com/ecb/products/sensor/special/environmentsensor/)
+*   [環境センサ : 2JCIE 製品紹介](http://www.omron.co.jp/ecb/products/sensor/special/environmentsensor/)
+*   [Environment Sensor : 2JCIE-BL01](https://www.components.omron.com/product-detail?partId=73064)
+*   [Environment Sensor : 2JCIE-BU01](https://www.components.omron.com/product-detail?partId=73065)
