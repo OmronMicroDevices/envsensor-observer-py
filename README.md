@@ -1,3 +1,5 @@
+# Note
+This division was reorganized already. It doesn't exist now. These contents are planning to move to 'https://github.com/omron-devhub'.
 # envsensor-observer-py
 
 Python Bluetooth low energy observer example for OMRON Environment Sensor ([2JCIE-BL01](http://www.omron.com/ecb/products/sensor/special/environmentsensor/))([2JCIE-BU01](https://www.components.omron.com/product-detail?partId=73065)).
@@ -120,6 +122,13 @@ With [Grafana](http://grafana.org/), you can easily visualize any of data stored
 ## Note :
 
 It should be noted that this example code is for demonstration purposes only, it is not intended for use in a production environment, is not guaranteed fit for any purpose.
+
+## Licence :
+
+Copyright (c) OMRON Corporation. All rights reserved.
+
+Licensed under the MIT License.
+
 
 ## Reference :
 *   [OMRON Corporation](http://www.omron.com/)
